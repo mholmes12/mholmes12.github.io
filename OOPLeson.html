@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MeganWebSite</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the header */
+header {
+  background-color: #99bbff;
+padding: 0.2px;
+  text-align: center;
+  color:  #19194d;
+font: normal normal bold 35px/1.4 Exodus Demo Striped;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccccd6;
+  padding: 20px;
+font: normal normal normal 25px/1.4 Exodus Demo;
+color: #ff4137;
+}
+
+/* Style the smaller headers*/
+header2 {
+font: normal normal bold 25px/1.4 Exodus Demo;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: ff4137;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+/* Style image*/
+.image{
+padding-right:16px;
+padding-top:18px;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+font: normal normal normal 20px/1.4 Calibri;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+
+  }
+}
+.dropdown-content a:hover {background-color: #dcd0ea;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+</head><header>
+  <h2><img src="flower1.png" width = "100" length= "100">Megan Holmes Portfolio<img src="flower2.png"width = "100" length= "100"s></h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="Websitestart.html">Home</a></li>
+      <li><a href="AboutMe.html">About Me</a></li>
+      <li><a href="Projects.html">Projects</a></li>
+ 	<div class="dropdown">
+  <li><a>Lessons</a></li>
+  <div class="dropdown-content">
+ <li><a href="OOPLeson.html">OOP</a></li>
+ 	<li><a href="RecursionLesson.html">Recursion</a></li>
+ 	<li><a href="ArraysLesson.html">Arrays</a></li>
+<li> <a href="SortingLesson.html">Sorting</a></li>
+  </div>
+</div>	
+    </ul>
+  </nav>
+<article>
+    <header2><center> Lesson: Object Oriented Programming </center></header2>
+<p>
+<b> Summery</b> <br>	
+Object Oriented Programming (OOP)  is a programming paradigm for a style of programming in which classes are based on the concept of "objects". Each object has an identity, state (properties that may change), and a  behavior (it can do different things). Software objects have all of these as well. 
+ <br>
+<br><b>Classes</b><br> 
+Classes are descriptions for an object, either predefined java library class or defined using java.
+<br><br><b>
+Sub classes</b><br>
+Sub classes are classes that extend a superclass. They inherit and therefore can use all the public methods of a super class.  In it's constructor, a subclass must use the super class constructor in the first line of it's constructor or rely on the default no argument constructor. It will also usually have it's own fields (attributes) which define what makes it its own object. For example, a shape will have numberOfSides, and area as variables, where as a subclass of the shape class, say the circle,  may additionally have diameter and radius variables. 
+<br><br><b>
+Fields (Attributes)</b><br>
+Objects in real life, have attributes. These can be colors, size, name, and much more. In object oriented programming, these attributes are represented as variables, or fields,  in an objects class. These should always be private and not accessible directly by subclasses. Instead, they can be accessed by set and get methods.
+<br><br><b>
+Abstract Classes</b><br>
+Abstract classes are classes with at least one abstract method. Abstract methods are  methods with only signatures defined and that is declared abstract. Abstract classes can be used as super classes for specific classes and describe abstract objects. They can also have constructors that can be called by sub classes constructors. Java does not actually allow objects to be created of abstract classes. 
+<br><br><b>Interface</b>
+An interface is very similar to a class, however all of it;s methods are abstract, and cannot
+have fields or constructors. When a class implements an interface, it must have all the methods outlined in the interface. One class can implement more then one interface. Objects of a class that implements and interface are supplied wit a secondary data type. Like an abstract class, interfaces cannot be instantiated.
+
+</p>
+<center><a href="OOPLeson.html"><img src="Page1Button.png" width = "80" length= "80"><a href="OOPLesson2.html"><img src="Page2Button.png" width = "80" length= "80"></a></center>
+  </article>
+</section>
+
+<footer>
+  <p>Megan Holmes | megan.holmes@student.tdsb.on.ca | May 7 2019 </p>
+</footer>
+</html>

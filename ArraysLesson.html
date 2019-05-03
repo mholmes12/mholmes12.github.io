@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MeganWebSite</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the header */
+header {
+  background-color: #99bbff;
+padding: 0.2px;
+  text-align: center;
+  color:  #19194d;
+font: normal normal bold 35px/1.4 Exodus Demo Striped;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccccd6;
+  padding: 20px;
+  font: normal normal normal 25px/1.4 Exodus Demo;
+  color: #ff4137;
+  width: 240px;
+}
+
+/* Style the smaller headers*/
+header2 {
+font: normal normal bold 25px/1.4 Exodus Demo;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: ff4137;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+/* Style image*/
+.image{
+padding-right:16px;
+padding-top:18px;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+font: normal normal normal 20px/1.4 Calibri;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+
+  }
+}
+.dropdown-content a:hover {background-color: #dcd0ea;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+</head><header>
+  <h2><img src="flower1.png" width = "100" length= "100">Megan Holmes Portfolio<img src="flower2.png"width = "100" length= "100"s></h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="Websitestart.html">Home</a></li>
+      <li><a href="AboutMe.html">About Me</a></li>
+      <li><a href="Projects.html">Projects</a></li>
+ 	<div class="dropdown">
+  <li><a>Lessons</a></li>
+  <div class="dropdown-content">
+ <li><a href="OOPLeson.html">OOP</a></li>
+ 	<li><a href="RecursionLesson.html">Recursion</a></li>
+ 	<li><a href="ArraysLesson.html">Arrays</a></li>
+ <li><a href="SortingLesson.html">Sorting</a></li>
+  </div>
+</div>	
+    </ul>
+  </nav>
+<article>
+    <header2><center> Lesson: Arrays </center></header2>
+<p>
+<b>Arrays</b><br>
+An array is a consecutive space of memory that holds multiple values of the same data type. Arrays are treated like objects and can hold primitive data or objects.The individual locations in the array are called the elements of the array. An array has one name and the index of the array specifies an individual element in the array. Indices start at 0 and go to the length of the array minus 1. These indices are written in square brackets following an array’s name. For example, the second place in an array called NumArr[] would be accessed using NumArr[1].  
+<br><br><b>
+Declaration and Initialization</b><br>
+When an array is declared, it is given its name and data type. When it is initialized, which can be done as declared or post-phones, a size must be given to the array. The length of an array comes from either the list of values entered or the size given to an array during initialization. Each element of the array can be given its value initially or will be given the default value of that data type. 
+<br><br><b>Arrays and Methods</b><br>
+When an array is passed in the parameters of a method, it is treated like other objects and is passed as a reference. It is important to remember that the elements of the original array are not copied. Arrays can also be returned from methods. The return type for the method is the type of array. For example, if an array of ints is being returned, the method is declared with int[] as it’s return type. 
+<br><br>
+<b>Two-Dimensional Arrays</b><br>
+Arrays can be viewed as rows of data, and two-dimensional arrays are arrays with rows and columns, or arrays of arrays. They often used to represent tables or board games. To declare and initialize a two-dimensional array, follow the same rules as regular arrays but insetad of one square bracket to indicate the length of the array there is one to indicate the number of rows and one for the number of colors. To get the number of rows of an array, use arrayNameHere.length. To access the number of columns, use arrayNameHere[0].length. 
+<br>
+</p>
+  </article>
+</section>
+
+<footer>
+  <p>Megan Holmes | megan.holmes@student.tdsb.on.ca | May 7 2019 </p>
+</footer>
+</html>
